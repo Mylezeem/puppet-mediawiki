@@ -10,7 +10,19 @@
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
-      "version_range": ">= 1.0.0"
+      "version_range": ">= 4.3.2"
+    },
+    {
+      "name": "puppetlabs-concat",
+      "version_range": ">= 1.0.4"
+    },
+    {
+      "name": "puppetlabs-apache",
+      "version_range": ">= 1.1.1"
+    },
+    {
+      "name": "stahnma-epel",
+      "version_range": ">= 0.1.1"
     }
   ]
 }

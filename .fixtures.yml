@@ -1,0 +1,16 @@
+fixtures:
+  repositories:
+    'stdlib':
+      repo: 'git://github.com/puppetlabs/puppetlabs-stdlib.git'
+      ref: '4.3.2'
+    'concat':
+      repo: 'git://github.com/puppetlabs/puppetlabs-concat.git'
+      ref: '1.0.4'
+    'apache':
+      repo: 'git://github.com/puppetlabs/puppetlabs-apache.git'
+      ref: '1.1.1'
+    'epel':
+      repo: 'git://github.com/stahnma/puppet-module-epel'
+      ref: '0.1.1'
+  symlinks:
+    "mediawiki": "#{source_dir}"

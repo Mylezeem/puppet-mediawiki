@@ -35,7 +35,18 @@
 #
 # Copyright 2014 Your name here, unless otherwise noted.
 #
-class mediawiki {
+class mediawiki (
+  $package_ensure  = 'present',
+  $package_name    = 'mediawiki119',
+) inherits mediawiki::params {
 
+  include ::epel
+  include ::apache
+  include ::apache::mod::php
+
+  package { 'mediawiki' :
+    ensure => $mediawiki::package_ensure,
+    name   => $mediawiki::package_name,
+  }
 
 }
