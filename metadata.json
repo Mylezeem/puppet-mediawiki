@@ -1,0 +1,17 @@
+{
+  "name": "puppet-mediawiki",
+  "version": "0.1.0",
+  "author": "Yanis Guenane <yguenane@gmail.com>",
+  "summary": "A Puppet module to install and manage wiki",
+  "license": "Apache 2.0",
+  "source": "https://github.com/Mylezeem/puppet-mediawiki",
+  "project_page": "https://github.com/Mylezeem/puppet-mediawiki",
+  "issues_url": "https://github.com/Mylezeem/puppet-mediawiki/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 1.0.0"
+    }
+  ]
+}
+
