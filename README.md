@@ -1,5 +1,10 @@
 # mediawiki
 
+[![Build Status](https://api.travis-ci.org/Mylezeem/puppet-mediawiki.svg?branch=master)](https://travis-ci.org/Mylezeem/puppet-mediawiki)
+[![Puppet Forge Version](http://img.shields.io/puppetforge/v/yguenane/mediawiki.svg)](https://forge.puppetlabs.com/yguenane/mediawiki)
+[![Puppet Forge Downloads](http://img.shields.io/puppetforge/dt/yguenane/mediawiki.svg)](https://forge.puppetlabs.com/yguenane/mediawiki)
+[![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
+
 #### Table of Contents
 
 1. [Overview](#overview)
