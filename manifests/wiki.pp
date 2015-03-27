@@ -1,3 +1,4 @@
+# define: mediawiki::wiki
 define mediawiki::wiki (
   $vhost       = {},
   $options     = {},
@@ -25,7 +26,7 @@ define mediawiki::wiki (
     path   => '/bin',
   } ->
   file { "/var/www/${name}/LocalSettings.php" :
-    ensure  => present,
+    ensure  => file,
     content => template('mediawiki/LocalSettings.php.erb'),
   }
 }

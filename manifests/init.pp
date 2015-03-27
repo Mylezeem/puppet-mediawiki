@@ -14,30 +14,29 @@
 #
 # Here you should define a list of variables that this module would require.
 #
-# [*sample_variable*]
-#   Explanation of how this variable affects the funtion of this class and if
-#   it has a default. e.g. "The parameter enc_ntp_servers must be set by the
-#   External Node Classifier as a comma separated list of hostnames." (Note,
-#   global variables should be avoided in favor of class parameters as
-#   of Puppet 2.6.)
+# [*package_ensure*]
+#   State of the package on the system. Possible value : present, absent
+#   Defaults: Present
+#
+# [*package_name*]
+#   Name of the package to install
+#   Default: mediawiki119
 #
 # === Examples
 #
-#  class { mediawiki:
-#    servers => [ 'pool.ntp.org', 'ntp.local.company.com' ],
-#  }
+#  include ::mediawiki
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Yanis Guenane (yguenane@gmail.com)
 #
 # === Copyright
 #
-# Copyright 2014 Your name here, unless otherwise noted.
+# Copyright 2014-2015 Yanis Guenane
 #
 class mediawiki (
-  $package_ensure  = 'present',
-  $package_name    = 'mediawiki119',
+  $package_ensure = 'present',
+  $package_name   = 'mediawiki119',
 ) inherits mediawiki::params {
 
   include ::epel
